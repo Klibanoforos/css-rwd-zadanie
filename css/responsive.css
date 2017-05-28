@@ -1,49 +1,27 @@
-* {
-	box-sizing: border-box;
-}
-
-body {
-	font-family: 'Roboto', sans-serif;
-	background-color: #222;
-	color: #eee;
-}
-
-h2 {
-	text-transform: uppercase;
-}
-
 #gallery {
-	width: 1024px;
-	margin: 0 auto;
-	text-align: center;
+    width: 100%;
 }
 
-figure {
-	display: inline-block;
-	width: 338px;
-	margin: 0;
-	margin-bottom: 10px;
-}
-
-figure figcaption {
-	text-align: center;
-}
-
-figure img{
-	width: 100%;
-	border: 2px solid #444;
+#gallery figure {
+    width: 33%;
 }
 
 @media (max-width: 992px) {
-    #gallery {
-        width: 75%;
-        height: 75%;
+   #gallery figure {
+        width: 49%;
     }
 }
 
-@media (min-width: 768px and max-width: 992px) {
-    #gallery {
-        width: 50%;
-        height: 50%;
+@media (max-width: 768px) {
+    #gallery figure {
+        width: 100%;
+        float: left;
+    }
+}
+
+@media (max-width: 480px) {
+    #gallery figure {
+        width: 100vw;
+        float: left;
     }
 }
