@@ -1,5 +1,5 @@
 #gallery {
-    width: 100%;
+    width: 90%;
 }
 
 #gallery figure {
@@ -15,13 +15,11 @@
 @media (max-width: 768px) {
     #gallery figure {
         width: 100%;
-        float: left;
     }
 }
 
 @media (max-width: 480px) {
-    #gallery figure {
-        width: 100vw;
-        float: left;
+    #gallery {
+        width: 100%;
     }
 }
